@@ -75,6 +75,23 @@ public class displayNode {
 
         }
     }
+    public void searchValue(int value) {
+        int position=1;
+        boolean found=false;
+        Node3 temp=head;
+        while (temp!=null) {
+            if (temp.value==value) {
+                System.out.println("Value:" + value + " found at position: " + position);
+                found=true;
+                break;
+            }
+            temp=temp.next;
+            position++;
+        }
+        if (!found) {
+            System.out.println("Value: " + value + " not found!");
+        }
+    }
     public void display() {
         Node3 temp=head;
         while (temp!=null) {
@@ -103,6 +120,10 @@ public class displayNode {
 
         list.reverseList();
         list.display();
+
+        list.searchValue(65);
+        list.searchValue(100);
+        
     }
     
 }
