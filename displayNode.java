@@ -14,7 +14,19 @@ public class displayNode {
         }
         temp.next=newNode;
     }
-
+    public void reverseList() {
+        Node3 previous=null;
+        Node3 current=head;
+        Node3 next=null;
+        current=head;
+        while (current!=null) {
+            next=current.next;
+            current.next=previous;
+            previous=current;
+            current=next;
+        }
+        head=previous;
+    }
     public void insertAtStart(int value) {
         Node3 newNode=new Node3(value);
         if (head==null) {
@@ -87,6 +99,9 @@ public class displayNode {
         list.display();
 
         list.deleteByValue(20);
+        list.display();
+
+        list.reverseList();
         list.display();
     }
     
