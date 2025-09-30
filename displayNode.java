@@ -11,6 +11,7 @@ public class displayNode {
         Node3 temp=head;
         while(temp.next!=null) {
             temp=temp.next;
+            
         }
         temp.next=newNode;
     }
