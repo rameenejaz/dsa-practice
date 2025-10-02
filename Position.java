@@ -5,4 +5,7 @@ public class Position {
         this.row=r;
         this.col=c;
     }
+    public String toString() {
+        return "( " + row + "," + col + ")";
+    }
 }
