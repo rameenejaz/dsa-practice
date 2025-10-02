@@ -196,7 +196,6 @@
 
 import java.util.Scanner;
 
-// ---------------- CHAR STACK ----------------
 class CharStack {
     private char[] arr;
     private int top;
@@ -231,7 +230,6 @@ class CharStack {
     }
 }
 
-// ---------------- INT STACK ----------------
 class IntStack {
     private int[] arr;
     private int top;
@@ -259,7 +257,6 @@ class IntStack {
     }
 }
 
-// ---------------- MAIN CLASS ----------------
 public class InfixPostfix {
 
     static int precedence(char ch) {
@@ -343,7 +340,8 @@ public class InfixPostfix {
                     case '/': result = val1 / val2; break;
                     case '^':
                         result = 1;
-                        for (int j = 0; j < val2; j++) result *= val1;
+                        for (int j = 0; j < val2; j++) 
+                        result *= val1;
                         break;
                 }
                 stack.push(result);

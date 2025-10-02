@@ -47,12 +47,12 @@ public class balancedBrackets {
                 char top = stack.pop();
 
                 // check matching
-                if ((c == ')' && top == '(') || (c == '}' && top == '{') || (c == ']' && top == '[')) {
-                    return true;
+                if ((c == ')' && top != '(') || (c == '}' && top != '{') || (c == ']' && top != '[')) {
+                    return false;
                 }
             }
         }
-
+        
         // balanced if nothing remains
         return stack.isEmpty();
     }
