@@ -19,6 +19,7 @@ public class MazeSolverCustomStack {
             {'0', '1', '0', 'E'},
             {'0', '0', '0', '1'},
             {'1', '1', '0', '1'}
+            
         };
     }
     static Position findStart(char[][] maze) {
