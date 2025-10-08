@@ -31,4 +31,20 @@ public class CircularQueue {
         size++;
         System.out.println("Enqueued: " + data);
     }
+    int dequeue() {
+        if(isEmpty()) {
+            System.out.println("Queue is Empty");
+            return -1;
+        }
+        int removed=arr[front];
+        front=(front+1)%capacity;
+        size--;
+        if (size==0) {
+            front=-1;
+            rear=-1;
+        }
+        System.out.println("Dequeued: " + removed);
+        return removed;
+    }
+
 }
