@@ -46,5 +46,15 @@ public class CircularQueue {
         System.out.println("Dequeued: " + removed);
         return removed;
     }
-
+    void display() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty");
+            return;
+        }
+        System.out.print("Queue:");
+        for (int i=0; i<size; i++) {
+            System.out.print(arr[(front+1)%capacity]+ " ");
+        }
+         System.out.println();
+    }
 }
