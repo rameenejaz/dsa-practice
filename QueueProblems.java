@@ -55,28 +55,28 @@ public class QueueProblems {
         }
 
         // ---------- Problem 3 ----------
-        System.out.println("\n=== Problem 3: Disaster Relief Simulation ===");
-        System.out.print("Enter number of regions: ");
-        int n = sc.nextInt();
-        DisasterReliefQueue dr = new DisasterReliefQueue(n);
+        // System.out.println("\n=== Problem 3: Disaster Relief Simulation ===");
+        // System.out.print("Enter number of regions: ");
+        // int n = sc.nextInt();
+        // DisasterReliefQueue dr = new DisasterReliefQueue(n);
 
-        for (int i = 0; i < n; i++) {
-            System.out.println("Enter details for region " + (i + 1) + ":");
-            System.out.print("Region ID: ");
-            String rid = sc.next();
-            System.out.print("Urgency Level (1-100): ");
-            double urgency = sc.nextDouble();
-            System.out.print("Population: ");
-            int pop = sc.nextInt();
-            System.out.print("Accessibility Index (1-100): ");
-            int acc = sc.nextInt();
-            dr.addRegion(rid, urgency, pop, acc);
-        }
+        // for (int i = 0; i < n; i++) {
+        //     System.out.println("Enter details for region " + (i + 1) + ":");
+        //     System.out.print("Region ID: ");
+        //     String rid = sc.next();
+        //     System.out.print("Urgency Level (1-100): ");
+        //     double urgency = sc.nextDouble();
+        //     System.out.print("Population: ");
+        //     int pop = sc.nextInt();
+        //     System.out.print("Accessibility Index (1-100): ");
+        //     int acc = sc.nextInt();
+        //     dr.addRegion(rid, urgency, pop, acc);
+        // }
 
-        System.out.print("Enter total number of resource allocation rounds: ");
-        int rounds = sc.nextInt();
-        dr.simulateAllocation(rounds);
+        // System.out.print("Enter total number of resource allocation rounds: ");
+        // int rounds = sc.nextInt();
+        // dr.simulateAllocation(rounds);
 
-        sc.close();
+        // sc.close();
     }
 }
