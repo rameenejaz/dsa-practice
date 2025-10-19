@@ -46,7 +46,7 @@ public class CircularQueue2 {
         int i=front;
         for (int count=0; count<size;count++) {
             System.out.print(arr[i] + " ");
-            i=(i+1)%capacity;
+            i=(i+1)%capacity; //wrap around if necessary
         }
         System.out.println();
     }
