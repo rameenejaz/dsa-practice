@@ -1,27 +1,36 @@
 public class Stack2 {
-    int [] arr;
+    char [] arr;
     int top;
     int size;
     public Stack2(int size) {
-        arr=new int[size];
+        this.size=size;
+        arr=new char[size];
         top=-1;
     }
-    public void push (int x) {
-        if (top==-1) {
+    public void push (char x) {
+        if (top==size-1) {
             System.out.println("Stack overflow");
+            return;
         }
         else {
-            top++;
-            arr[top]=x;
+            arr[++top]=x;
         }
     }
-    public void pop() {
+    public char pop() {
         if (top==-1) {
-            System.out.println("Stack underflow");
+            System.out.println("Stack Underflow");
+            return '\0'; //return null
         }
-        else {
-            System.out.println(arr[top--]);
+        return arr[top--];
+    }
+    public char peek() {
+        if (top==-1) {
+            return '\0';
         }
+        return arr[top];
+    }
+    public boolean isEmpty() {
+        return top==-1;
     }
 
 }
