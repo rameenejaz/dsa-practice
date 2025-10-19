@@ -1,9 +1,12 @@
+import java.util.Scanner;;
 public class balancedParenthesis {
     public static void main(String[] args) {
-        String expression1="((a+b)*c)";
-        String expression2="((a+b)";
-        System.out.println("Expression: " + expression1 + isBalanced(expression1));
-        System.out.println("Expression 2: " + expression2 +isBalanced(expression2));
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter your expression: ");
+        String expression1=sc.nextLine();
+        // String expression2="((a+b)";
+        System.out.println("Expression: " + expression1 + " -> " + (isBalanced(expression1)? "Balanced": "Not Balanced"));
+        // System.out.println("Expression 2: " + expression2 + "->" +isBalanced(expression2));
     
 }
 public static boolean isBalanced(String expression) {
