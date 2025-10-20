@@ -47,4 +47,16 @@ public class LinkedQueue {
         System.out.println();
 
     }
+    public static void main(String[] args) {
+        LinkedQueue q=new LinkedQueue();
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+        q.printQueue();
+        System.out.println("Dequeued: " +q.dequeue());
+        q.printQueue();
+        q.enqueue(40);
+        q.enqueue(50);
+        q.printQueue();
+    }
 }
