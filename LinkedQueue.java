@@ -23,7 +23,7 @@ public class LinkedQueue {
         }
         int value=front.data;
         front=front.next;
-        if(front==null) { //if queue becomes empty
+        if(front==null) { //if queue becomes empty in case we only had one element
             rear=null;
         }
         return value;
@@ -33,5 +33,18 @@ public class LinkedQueue {
             return -1;
         }
         return front.data;
+    }
+    public void printQueue() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty");
+            return;
+        }
+        Node temp=front;
+        while(temp!=null) {
+            System.out.print(temp.data + " ");
+            temp=temp.next;
+        }
+        System.out.println();
+
     }
 }
