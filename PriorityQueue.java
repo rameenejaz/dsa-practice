@@ -29,5 +29,19 @@ public class PriorityQueue {
             System.out.println("ID: " +p.id + " Severity: " + p.severity);
         }
     }
+    public static void main(String[] args) {
+        PriorityQueue er=new PriorityQueue();
+        er.addPatient(160, 5);
+        er.addPatient(130, 9);
+        er.addPatient(025, 5);
+        er.printQueue();
+        while (true) {
+            Patient2 next=er.treatNextPatient();
+            if (next==null) 
+                break;
+            System.out.println("Treating patient ID: " + next.id + " with severity: " + next.severity);
+   
+        }
+    }
 
 }
