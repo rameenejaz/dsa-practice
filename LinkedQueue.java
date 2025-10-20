@@ -7,5 +7,14 @@ public class LinkedQueue {
     public boolean isEmpty() {
         return front==null;
     }
+    public void enqueue(int data) {
+        Node newNode=new Node(data);
+        if (rear==null) { //empty queue
+            front=rear=newNode;
+            return;
+        }
+        rear.next=newNode;
+        rear=newNode;
+    }
     
 }
