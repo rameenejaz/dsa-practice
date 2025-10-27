@@ -1,8 +1,8 @@
 public class PrinterScheduler {
-    private String jobID; 
-    private int priority; 
-    private int pages; 
-    private int submissionOrder; 
+    protected String jobID; 
+    protected int priority; 
+    protected int pages; 
+    protected int submissionOrder; 
     PrinterScheduler(String jobID, int priority, int pages) {
         this.jobID=jobID; 
         this.priority=priority; 
