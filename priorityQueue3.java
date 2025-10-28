@@ -11,6 +11,7 @@ public class priorityQueue3 {
         if (printer.isEmpty()) {
             System.out.println("No print job in line");
             return null;
+            
         }
         else {
             int maxIndex=0;
