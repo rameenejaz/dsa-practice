@@ -45,7 +45,7 @@ public class BST {
         }
 
         System.out.println("Element not found after " + comparisons + " comparisons.");
-        return -1;
+        return -1; 
     }
 
     // -------------------- DELETE --------------------
