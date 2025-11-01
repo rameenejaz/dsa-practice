@@ -13,7 +13,6 @@ class Node {
 public class BST {
     Node root;
 
-    // -------------------- INSERT --------------------
     public Node insert(Node root, int value) {
         if (root == null) {
             root = new Node(value);
@@ -28,7 +27,6 @@ public class BST {
         return root;
     }
 
-    // -------------------- SEARCH --------------------
     public int search(Node root, int key) {
         int comparisons = 0;
         Node current = root;
@@ -48,7 +46,6 @@ public class BST {
         return -1; 
     }
 
-    // -------------------- DELETE --------------------
     public Node delete(Node root, int key) {
         if (root == null) return null;
 
@@ -81,7 +78,6 @@ public class BST {
         return root;
     }
 
-    // -------------------- TRAVERSALS --------------------
     public void inorder(Node root) { // Left - Root - Right
         if (root != null) {
             inorder(root.left);
@@ -106,7 +102,6 @@ public class BST {
         }
     }
 
-    // -------------------- ADDITIONAL TASK 1 --------------------
     // Count and print leaf nodes
     public int printAndCountLeafNodes(Node root) {
         if (root == null) return 0;
