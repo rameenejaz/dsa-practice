@@ -4,7 +4,6 @@ class GraphList {
     private int vertices;
     private LinkedList<Edge>[] adjList;
 
-    // Edge class for weighted edges
     class Edge {
         int dest;
         int weight;
@@ -27,10 +26,9 @@ class GraphList {
     // Add edge (undirected)
     public void addEdge(int src, int dest, int weight) {
         adjList[src].add(new Edge(dest, weight));
-        adjList[dest].add(new Edge(src, weight)); // remove if directed
+        adjList[dest].add(new Edge(src, weight)); 
     }
 
-    // Print adjacency list
     public void printGraph() {
         System.out.println("\nAdjacency List:");
         for (int i = 0; i < vertices; i++) {
@@ -85,7 +83,6 @@ class GraphList {
         }
     }
 
-    // Dijkstra
     public void dijkstra(int start) {
         int[] dist = new int[vertices];
         boolean[] visited = new boolean[vertices];

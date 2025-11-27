@@ -29,11 +29,8 @@ public class Main3 {
         }
 
         System.out.println("\nSwaps used: " + swaps);
-
-        // Correct inorder
         int[] correctedInorder = obj.correctInorder(inorder);
 
-        // Build BST from corrected inorder
         Node root = obj.buildBSTFromSortedArray(correctedInorder, 0, n-1);
 
         System.out.print("\nCorrected inorder: ");
