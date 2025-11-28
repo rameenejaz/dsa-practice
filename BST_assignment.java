@@ -76,7 +76,7 @@ class BST_assignment {
 }
 
 void printTree(Node root, int level) {
-    if (root == null) return;
+    if (root == null) return; 
 
     // print right subtree first
     printTree(root.right, level + 1);
