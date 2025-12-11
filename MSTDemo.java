@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class MSTDemo {
 
-    // A class to represent an edge
+    // A class to represent an edge.
     static class Edge {
         int src, dest, weight;
     }
