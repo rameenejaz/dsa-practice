@@ -7,6 +7,7 @@ public class MSTDemo {
         int src, dest, weight;
     }
 
+    
     // Disjoint Set Union (Union-Find) for Kruskal
     static class UnionFind {
         int[] parent;
