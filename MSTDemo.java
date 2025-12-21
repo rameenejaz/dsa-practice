@@ -1,13 +1,14 @@
+//functions on Minimum Spanning Tree (MST) using Prim's and Kruskal's algorithms
 import java.util.Scanner;
 
-public class MSTDemo {
+public class MSTDemo {  
 
     // A class to represent an edge.
     static class Edge {
         int src, dest, weight;
     }
 
-    
+
     // Disjoint Set Union (Union-Find) for Kruskal
     static class UnionFind {
         int[] parent;
