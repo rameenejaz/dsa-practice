@@ -1,3 +1,4 @@
+//graph representation using adjacency list with BFS, DFS, and Dijkstra's algorithm
 import java.util.*;
 
 class GraphList {
