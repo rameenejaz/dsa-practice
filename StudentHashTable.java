@@ -1,3 +1,4 @@
+// hash table implementation for student records with linear probing, dynamic resizing, and user interaction
 import java.util.Scanner;
 
 public class StudentHashTable {
