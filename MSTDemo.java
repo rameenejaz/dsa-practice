@@ -1,6 +1,5 @@
 //functions on Minimum Spanning Tree (MST) using Prim's and Kruskal's algorithms
 import java.util.Scanner;
-
 public class MSTDemo {
 
     // A class to represent an edge.
